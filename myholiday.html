@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Holiday Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #a8e6cf, #dcedc8); /* Gradasi hijau */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4a4a4a;
+        }
+        p {
+            line-height: 1.6;
+            text-align: center; /* Memusatkan teks */
+            margin: 10px 0;
+            max-width: 600px; /* Membatasi lebar maksimum teks */
+            margin-left: auto; /* Margin otomatis untuk memusatkan */
+            margin-right: auto; /* Margin otomatis untuk memusatkan */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px; /* Membatasi lebar maksimum kontainer */
+            margin: 0 auto; /* Memusatkan kontainer */
+            background-color: #ffffff; /* Latar belakang putih untuk konten */
+            border-radius: 10px; /* Sudut melengkung */
+            padding: 20px; /* Ruang dalam untuk konten */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%; /* Memastikan gambar tidak lebih lebar dari kontainer */
+            height: auto; /* Memastikan tinggi gambar proporsional */
+            border-radius: 10px; /* Menambahkan sudut melengkung */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            max-width: 100%; /* Memastikan gambar tidak lebih lebar dari kontainer */
+            height: auto; /* Memastikan tinggi gambar proporsional */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 300px; /* Membuat gambar responsif dengan basis 300px */
+        }
+        .social {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-container {
+            display: inline-block; /* Membuat container berukuran hanya untuk konten */
+            background-color: #dcedc8; /* Latar belakang hijau muda */
+            border-radius: 8px; /* Sudut melengkung */
+            padding: 15px; /* Ruang dalam */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+        }
+        .social-container a {
+            color: #2e7d32; /* Warna teks hijau tua untuk tautan */
+            text-decoration: none; /* Menghilangkan garis bawah */
+            font-weight: bold; /* Mencetak tebal */
+            transition: color 0.3s; /* Efek transisi untuk perubahan warna */
+        }
+        .social-container a:hover {
+            color: #1b5e20; /* Mengubah warna saat hover */
+            text-decoration: underline; /* Menambahkan garis bawah saat hover */
+        }
+        .other-pages {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px; /* Ruang dalam untuk keseluruhan */
+            border-radius: 8px; /* Sudut melengkung */
+            background-color: #e8f5e9; /* Latar belakang hijau muda */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+        }
+        .other-pages b {
+            display: block;
+            margin-bottom: 10px; /* Jarak antara judul dan tautan */
+            font-size: 1.2em; /* Ukuran font yang lebih besar untuk judul */
+            color: #388e3c; /* Warna hijau tua untuk judul */
+        }
+        .other-pages a {
+            display: inline-block; /* Membuat tautan sebagai blok untuk efek */
+            margin: 5px 10px; /* Jarak antara tautan */
+            padding: 8px 15px; /* Ruang dalam pada tautan */
+            color: #007BFF; /* Warna teks biru */
+            text-decoration: none; /* Menghilangkan garis bawah */
+            background-color: #e3f2fd; /* Latar belakang biru muda */
+            border-radius: 5px; /* Sudut melengkung pada tautan */
+            transition: background-color 0.3s; /* Efek transisi untuk perubahan latar belakang */
+        }
+        .other-pages a:hover {
+            background-color: #bbdefb; /* Mengubah latar belakang saat hover */
+            text-decoration: underline; /* Menambahkan garis bawah saat hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>My Holiday</h1>
+    <p>Written By: Miracle Shui Angela Situmorang - 2382007</p>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="IMG-20241019-WA0064.jpg" alt="White Tiger">
+        </div>
+        
+        <p>
+            Hello, my name is <b>Miracle Shui Angela Situmorang</b>. I want to tell you about <i>My Holiday</i>. 
+            During the past few months of vacation, I spent half of my time traveling with my family, visiting many 
+            places like the zoo near my house and various tourist attractions. One of the highlights was our trip 
+            to the zoo, where I encountered many <i>cute</i> and adorable animals. However, there was one animal 
+            that scared me, the white tiger. But when I felt afraid, my father hugged me and stayed by my side, 
+            encouraging me to take a closer look at the white tiger. With my father by my side, I eventually gathered 
+            my courage, and I even threw some meat to feed it. The tiger jumped so high to catch the meat that it 
+            looked quite adorable, and from that moment on, <i>I grew to like the white tiger</i>.
+        </p>
+        
+        <p>
+            At the zoo, there were also animals I rarely see, like kangaroos, and they were incredibly cute as 
+            they hopped around. I was fascinated by their movements and spent time watching them play. It was 
+            a delightful experience that added to the joy of my vacation. The chance to see these unique animals 
+            up close was truly special, and it made me appreciate the diversity of wildlife even more.
+        </p>
+        
+        <p>
+            Overall, I had an amazing time during my vacation, and I learned a lot about animals. The experience 
+            at the zoo was unforgettable, and it filled me with happiness. I truly enjoyed every moment of my 
+            holiday, and it was a time well spent with my family, creating memories that I will cherish forever.
+        </p>
+        
+        <br><br>
+        
+        <div class="gallery">
+            <img src="IMG-20241019-WA0058.jpg" alt="Image 1">
+            <img src="IMG-20241019-WA0057.jpg" alt="Image 2">
+            <img src="IMG-20241019-WA0059.jpg" alt="Image 3">
+            <img src="IMG-20241019-WA0060.jpg" alt="Image 4">
+            <img src="IMG-20241019-WA0062.jpg" alt="Image 5">
+            <img src="IMG-20241019-WA0063.jpg" alt="Image 6">
+            <img src="IMG-20241019-WA0065.jpg" alt="Image 7">
+        </div>
+
+        <div class="social">
+            <div class="social-container">
+                <p>Please Follow My Instagram <a href="https://www.instagram.com/mcle_sh/?utm_source=ig_web_button_share_sheet">@mcle_sh</a> :O</p>
+            </div>
+        </div>
+
+        <div class="other-pages">
+            <b>Other Pages</b>
+            <a href="index.html">Home</a>
+            <a href="Registration.html">Registration Form</a>
+            <a href="about.html">About Me</a>
+        </div>
+    </div>
+</body>
+</html>

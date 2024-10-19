@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box; /* Memastikan ukuran kotak konsisten */
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif; /* Font yang digunakan */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; /* Warna latar belakang hijau muda untuk kontras */
+        }
+
+        /* Header styling */
+        .header {
+            background-color: #81c784; /* Hijau muda untuk header */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+        }
+
+        /* Container untuk layout */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr; /* Layout satu kolom untuk mobile */
+            grid-gap: 20px;
+            padding: 15px;
+            max-width: 1200px; /* Lebar maksimum */
+            margin: 0 auto; /* Memusatkan kontainer */
+        }
+
+        /* Navigasi Menu */
+        .menu {
+            background-color: #66bb6a; /* Hijau lebih terang untuk menu */
+            padding: 15px;
+            border-radius: 8px; /* Sudut membulat */
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li {
+            padding: 10px;
+            margin-bottom: 8px;
+            background-color: #a5d6a7; /* Latar belakang untuk item menu */
+            color: white;
+            text-align: center;
+            border-radius: 5px; /* Sudut membulat */
+            transition: background-color 0.3s ease; /* Transisi halus */
+        }
+
+        .menu li:hover {
+            background-color: #388e3c; /* Hijau lebih gelap saat hover */
+        }
+
+        /* Area konten utama */
+        .main {
+            background-color: white; /* Latar belakang putih untuk konten utama */
+            padding: 20px; /* Padding ditingkatkan */
+            border-radius: 8px; /* Sudut membulat */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+        }
+
+        /* Styling untuk bagian aside */
+        .aside {
+            background-color: #66bb6a; /* Latar belakang hijau untuk aside */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 8px; /* Sudut membulat */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+        }
+
+        /* Footer styling */
+        .footer {
+            text-align: center;
+            padding: 15px 0; 
+            background-color: #81c784; /* Warna hijau muda untuk footer */
+            color: white;
+            border-radius: 8px; /* Sudut membulat */
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .footer p {
+            margin: 0;
+            padding: 10px;
+        }
+
+        .responsive-img {
+            width: 100%;
+            height: auto;
+            max-width: 500px; /* Lebar maksimum untuk gambar */
+            border-radius: 8px; /* Sudut membulat untuk gambar */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+            transition: transform 0.2s, box-shadow 0.2s; /* Transisi untuk efek transformasi dan bayangan */
+        }
+
+        .responsive-img:active {
+            transform: scale(0.95); /* Mengurangi ukuran gambar saat ditekan */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Efek bayangan saat ditekan */
+        }
+
+        @media (max-width: 768px) {
+            .footer, .header {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer, .header {
+                padding: 8px;
+            }
+        }
+
+        /* Styling untuk tablet dan layar yang lebih besar */
+        @media only screen and (min-width: 700px) {
+            .container {
+                grid-template-columns: 1fr 2fr 1fr; /* Layout tiga kolom */
+            }
+
+            .responsive-img {
+                max-width: 680px;
+                display: block;
+                margin: 0 auto; /* Memusatkan gambar */
+            }
+        }
+    </style>
+    <title>My Responsive Website</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to My Website!</h1>
+    </div>
+
+    <div class="container">
+        <!-- Navigasi Menu -->
+        <div class="menu">
+            <ul>
+                <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                <li><a href="about.html" style="color: white; text-decoration: none;">About Me</a></li>
+                <li><a href="myholiday.html" style="color: white; text-decoration: none;">My Holiday</a></li>
+                <li><a href="Registration.html" style="color: white; text-decoration: none;">Registration Form</a></li>
+            </ul>
+        </div>
+
+        <!-- Konten Utama -->
+        <div class="main">
+            <center><h1>Hello!</h1></center>
+            <center><img src="IMG-20241019-WA0068.jpg" alt="An image I think" class="responsive-img"></center>
+            <p>
+                Hello, I am Miracle Shui. I'm from Sumatra. <br>
+                This is my personal responsive website.<br>
+            </p>
+        </div>
+
+        <div class="aside">
+            <h2>ME :)</h2>
+            <p>        
+                Saya Miracle, dan saya adalah mahasiswa di Universitas Advent Indonesia. <br>
+            </p> 
+
+            <p>
+                Saya ingin menjadi seorang programmer yang baik, itulah alasan saya berkuliah di UNAI. <br>
+            </p>
+
+            <p>
+                Saya akan selalu memperhatikan apa yang diajarkan dosen-dosenku agar bisa semakin baik dalam mempelajari teknologi.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>
+            God Bless You:)
+        </p>
+    </div>
+</body>
+</html>
